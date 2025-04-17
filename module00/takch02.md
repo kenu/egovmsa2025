@@ -1,6 +1,6 @@
 1. Takch02
 
 - 취미 : 운동, 기타연주
-- 프로젝트
+- [Github](https://github.com/Takch02)
 
 
