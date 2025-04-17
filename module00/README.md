@@ -11,3 +11,5 @@ cat ~/.gitconfig
 3. commit
 4. pull
 5. push
+
+- [git](./git.md)
