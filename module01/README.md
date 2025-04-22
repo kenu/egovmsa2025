@@ -180,34 +180,34 @@ GitHub 원격 저장소(Remote)
 ### Merge 예시
 
 ```
-  A---B---C (master)
+  A---B---C (main)
        \
         D---E (feature)
 
-  A---B---C---F (master)
+  A---B---C---F (main)
        \     /
         D---E (feature)
 ```
 
 1. `feature` 브랜치에서 작업 완료
-2. `master` 브랜치로 이동
+2. `main` 브랜치로 이동
 3. `git merge feature` 실행
 4. 새로운 병합 커밋 F 생성
 
 ### Rebase 예시
 
 ```
-  A---B---C (master)
+  A---B---C (main)
        \
         D---E (feature)
 
-  A---B---C (master)
+  A---B---C (main)
            \
             D'---E' (feature)
 ```
 
 1. `feature` 브랜치에서 작업 완료
-2. `feature` 브랜치에서 `git rebase master` 실행
+2. `feature` 브랜치에서 `git rebase main` 실행
 3. D와 E 커밋이 C 뒤로 재배치되어 D'와 E'가 됨
 
 

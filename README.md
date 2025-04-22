@@ -5,3 +5,6 @@
 
 ## 참고
 - https://git-scm.com/book/ko/v2/Git-브랜치-브랜치란-무엇인가
+
+## 라이선스
+- [Apache License 2.0](./LICENSE)
