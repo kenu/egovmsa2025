@@ -1,6 +1,6 @@
 # Docker 실습
 
-- `ssh -i ~/keys/msa-kenuheo.pem ec2-user@43.201.66.7`
+- `ssh -i ~/keys/msa-kenuheo.pem ec2-user@IPADDRESS`
 
 
 ## frontend
@@ -29,7 +29,7 @@ CMD ["serve", "-l", "3000", "-s", "dist"]
 ```
 
 - `src/config.js` 수정
-  - `export const SERVER_URL = 'http://43.201.66.7:8080';`
+  - `export const SERVER_URL = 'http://IPADDRESS:8080';`
 #### docker build & run
 ```
 docker build -t frontend .
