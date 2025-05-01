@@ -6,7 +6,7 @@
 ## frontend
 
 - `mkdir ~/git && cd ~/git`
-- `git clone https://github.com/kenu/egovframe-template-simple-react`
+- `git clone https://github.com/eGovFramework/egovframe-template-simple-react`
 
 #### Dockerfile
 
@@ -33,14 +33,14 @@ CMD ["serve", "-l", "3000", "-s", "dist"]
 #### docker build & run
 ```
 docker build -t frontend .
-docker run -it -p 3000:3000 frontend
+docker run -d -p 3000:3000 frontend
 ```
 
 ## backend
 
 ```
 cd ~/git
-git clone https://github.com/kenu/egovframe-template-simple-backend
+git clone https://github.com/eGovFramework/egovframe-template-simple-backend
 mvn clean package
 ```
 #### Dockerfile
@@ -65,5 +65,5 @@ CMD ["java", "-Dspring.profiles.active=${profile:default}", "-jar", "app.jar"]
 
 ```
 docker build -t backend .
-docker run -it -p 3000:3000 backend
+docker run -d -p 3000:3000 backend
 ```
