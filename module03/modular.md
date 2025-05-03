@@ -81,7 +81,7 @@ com.example.application/
   │   └── domain/
   └── shared/          # 공유 코드 (최소화)
 ```
-![패키지 구조화](./images/which-way.png)
+![패키지 구조화](./images/which-way.webp)
 
 ### 2. 모듈 간 통신 패턴
 - **직접 API 호출**: 모듈 API를 통한 직접 호출
