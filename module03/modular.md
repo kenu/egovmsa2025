@@ -103,7 +103,7 @@ com.example.application/
 3. **내부 API 설계**: 마이크로서비스 API로 발전할 수 있는 내부 API 설계
 4. **점진적 분리**: 필요에 따라 특정 모듈을 마이크로서비스로 분리
 
-![모놀리스에서 마이크로서비스로의 진화](https://devblogs.microsoft.com/cesardelatorre/wp-content/uploads/sites/32/2022/12/image-9.png)
+![모놀리스에서 마이크로서비스로의 진화](./images/monolithic-to-microservices-evolution.webp)
 
 ## 모듈러 모놀리스 적용 사례
 
@@ -128,7 +128,7 @@ com.example.application/
 ## 참고 자료
 - [Modular Monoliths - Simon Brown](https://www.youtube.com/watch?v=5OjqD-ow8GE)
 - [Modular Monolith: A Primer - Kamil Grzybek](https://www.kamilgrzybek.com/design/modular-monolith-primer/)
-- [Shopify's Journey to Modular Monolith](https://engineering.shopify.com/blogs/engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity)
+- [Shopify's Journey to Modular Monolith](https://mehmetozkaya.medium.com/shopifys-modular-monolithic-architecture-a-deep-dive-%EF%B8%8F-a2f88c172797)
 - [The Majestic Monolith - David Heinemeier Hansson](https://m.signalvnoise.com/the-majestic-monolith/)
 - [MonolithFirst - Martin Fowler](https://martinfowler.com/bliki/MonolithFirst.html)
 - [모놀리스에서 마이크로서비스 아키텍처로의 전환 전략::박선용::AWS Summit Seoul 2018](https://www.slideshare.net/slideshow/architecture-conversion-strategy-from-monolith-to-microservice-seon-yong-park/94105825)

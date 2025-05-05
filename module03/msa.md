@@ -9,7 +9,7 @@
 - 마이크로서비스 아키텍처를 사용하면 크고 복잡한 애플리케이션을 빠르고 자주 안정적으로 전달
 - 또한 조직이 기술 스택을 발전 가능
 
-![마이크로서비스 아키텍처 개요](https://miro.medium.com/v2/resize:fit:1400/1*wiMj7LMK9ckjq-8I0YCW2g.png)
+![마이크로서비스 아키텍처 개요](./images/msa.webp)
 
 ## MSA(MicroService Architecture)의 정의
 - 하나의 애플리케이션을 작고 독립적인 서비스로 나누어 개발
@@ -17,7 +17,7 @@
 - 서비스 분리는 각 서비스가 비즈니스 요구에 맞춰 독립적으로 확장 가능하고, 유지보수가 용이하도록 설계하는 것이 목표
 - 개발부터 배포까지 효율적으로 수행 가능 -> 기업이 개발 및 유지보수에 소요되는 시간과 비용을 줄이는 데 도움
 
-![모놀리식 vs 마이크로서비스](https://www.atlassian.com/dam/jcr:5308cc56-ff2b-4387-a2e8-3e6a0fce6e81/monolithic-vs-microservices-architecture.svg)
+![모놀리식 vs 마이크로서비스](./images/monolith-msa.webp)
 
 ## MSA의 구조
 MSA는 크게 Inner Architecture와 Outer Architecture로 구분할 수 있음
@@ -183,3 +183,4 @@ API Gateway는 API 서버 앞단에서 모든 API 서버들의 엔드포인트�
 - [Red Hat - 마이크로 서비스란?](https://www.redhat.com/ko/topics/microservices/what-are-microservices)
 - [What Is a Modular Monolith?](https://velog.io/@gravitycage/What-Is-a-Modular-Monolith)
 - [MSA 서비스간 통신 방법](https://velog.io/@minsuk/MSA-서비스간-통신-방법)
+- [모놀리스(Monolithic)와 마이크로서비스 아키텍처(Microservice Architecture)](https://6mini.github.io/software%20architecture%20pattern/2023/01/31/monolith-micro/)
