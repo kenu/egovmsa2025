@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 750">
+  <style>
+    .context { 
+      fill: #f0f8ff; 
+      stroke: #4682b4; 
+      stroke-width: 2; 
+      rx: 10; 
+      ry: 10; 
+    }
+    .service { 
+      fill: #ffffff; 
+      stroke: #1e90ff; 
+      stroke-width: 1.5; 
+      rx: 5; 
+      ry: 5; 
+    }
+    .context-title {
+      fill: #2c3e50;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .service-title {
+      fill: #1e90ff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .service-desc {
+      fill: #555;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+    }
+    .title {
+      fill: #2c3e50;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .arrow {
+      stroke: #666;
+      stroke-width: 1.5;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .relation-text {
+      fill: #555;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-style: italic;
+    }
+    .relation-bg {
+      fill: white;
+      stroke: white;
+      stroke-width: 3;
+    }
+    .legend-box {
+      fill: #ffffff;
+      stroke: #aaa;
+      stroke-width: 1;
+      rx: 3;
+      ry: 3;
+    }
+    .legend-text {
+      fill: #555;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+    }
+  </style>
+
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Main Title -->
+  <text x="450" y="40" class="title" text-anchor="middle">마이크로서비스 아키텍처 - Bounded Context 및 연관관계</text>
+  
+  <!-- User Context -->
+  <rect x="50" y="80" width="320" height="100" class="context" />
+  <text x="210" y="105" class="context-title" text-anchor="middle">사용자 관련 Bounded Context</text>
+  <rect x="70" y="115" width="280" height="50" class="service" />
+  <text x="210" y="135" class="service-title" text-anchor="middle">user-service</text>
+  <text x="210" y="153" class="service-desc" text-anchor="middle">사용자 서비스 (로그인, 회원가입, 비밀번호 찾기, 관리자)</text>
+  
+  <!-- Portal Context -->
+  <rect x="530" y="80" width="320" height="100" class="context" />
+  <text x="690" y="105" class="context-title" text-anchor="middle">포털 공통 Bounded Context</text>
+  <rect x="550" y="115" width="280" height="50" class="service" />
+  <text x="690" y="135" class="service-title" text-anchor="middle">portal-service</text>
+  <text x="690" y="153" class="service-desc" text-anchor="middle">포털 공통 서비스 (메뉴, 코드, 컨텐츠, 권한, 인가, 배너, 첨부파일 관리)</text>
+  
+  <!-- Board Context -->
+  <rect x="50" y="260" width="320" height="100" class="context" />
+  <text x="210" y="285" class="context-title" text-anchor="middle">게시판 관련 Bounded Context</text>
+  <rect x="70" y="295" width="280" height="50" class="service" />
+  <text x="210" y="315" class="service-title" text-anchor="middle">board-service</text>
+  <text x="210" y="333" class="service-desc" text-anchor="middle">게시판 서비스 (게시판, 게시물, 첨부파일 관리)</text>
+  
+  <!-- Reserve Context -->
+  <rect x="250" y="440" width="400" height="220" class="context" />
+  <text x="450" y="465" class="context-title" text-anchor="middle">예약 관련 Bounded Context</text>
+  
+  <rect x="270" y="480" width="360" height="50" class="service" />
+  <text x="450" y="500" class="service-title" text-anchor="middle">reserve-item-service</text>
+  <text x="450" y="518" class="service-desc" text-anchor="middle">예약 물품 서비스</text>
+  
+  <rect x="270" y="540" width="360" height="50" class="service" />
+  <text x="450" y="560" class="service-title" text-anchor="middle">reserve-request-service</text>
+  <text x="450" y="578" class="service-desc" text-anchor="middle">예약 신청 서비스</text>
+  
+  <rect x="270" y="600" width="360" height="50" class="service" />
+  <text x="450" y="620" class="service-title" text-anchor="middle">reserve-check-service</text>
+  <text x="450" y="638" class="service-desc" text-anchor="middle">예약 확인 서비스</text>
+
+  <!-- Relationships (Arrows) -->
+  <!-- User to Portal -->
+  <path d="M370 130 C450 130, 450 130, 550 130" class="arrow" />
+  <text x="460" y="118" class="relation-bg" text-anchor="middle">인증/권한</text>
+  <text x="460" y="118" class="relation-text" text-anchor="middle">인증/권한</text>
+  
+  <!-- User to Board -->
+  <path d="M210 165 C210 200, 210 215, 210 295" class="arrow" />
+  <text x="175" y="230" class="relation-bg" text-anchor="middle">사용자 정보</text>
+  <text x="175" y="230" class="relation-text" text-anchor="middle">사용자 정보</text>
+  
+  <!-- User to Reserve-Request -->
+  <path d="M120 165 C120 350, 120 550, 270 550" class="arrow" />
+  <text x="110" y="360" class="relation-bg" text-anchor="end">사용자 정보</text>
+  <text x="110" y="360" class="relation-text" text-anchor="end">사용자 정보</text>
+  
+  <!-- Portal to Board -->
+  <path d="M690 180 C690 240, 500 240, 370 295" class="arrow" />
+  <text x="530" y="230" class="relation-bg" text-anchor="middle">권한/첨부파일</text>
+  <text x="530" y="230" class="relation-text" text-anchor="middle">권한/첨부파일</text>
+  
+  <!-- Portal to Reserve Services -->
+  <path d="M750 180 C780 320, 780 510, 630 510" class="arrow" />
+  <text x="790" y="350" class="relation-bg" text-anchor="middle">권한/메뉴</text>
+  <text x="790" y="350" class="relation-text" text-anchor="middle">권한/메뉴</text>
+  
+  <!-- Reserve-Item to Reserve-Request -->
+  <path d="M370 530 C370 535, 370 535, 370 540" class="arrow" />
+  <text x="335" y="535" class="relation-bg" text-anchor="end">물품 정보</text>
+  <text x="335" y="535" class="relation-text" text-anchor="end">물품 정보</text>
+  
+  <!-- Reserve-Request to Reserve-Check -->
+  <path d="M370 590 C370 595, 370 595, 370 600" class="arrow" />
+  <text x="335" y="595" class="relation-bg" text-anchor="end">예약 정보</text>
+  <text x="335" y="595" class="relation-text" text-anchor="end">예약 정보</text>
+  
+  <!-- Board to Reserve-Item -->
+  <path d="M370 320 C520 330, 580 420, 530 480" class="arrow" />
+  <text x="500" y="380" class="relation-bg" text-anchor="middle">공지사항</text>
+  <text x="500" y="380" class="relation-text" text-anchor="middle">공지사항</text>
+
+  <!-- Legend -->
+  <rect x="680" y="670" width="180" height="60" class="legend-box" />
+  <text x="690" y="690" class="legend-text">
+    <tspan x="690" dy="0">→ 서비스 간 연관관계</tspan>
+    <tspan x="690" dy="16">Bounded Context: 기능적 경계</tspan>
+    <tspan x="690" dy="16">Service: 독립적 마이크로서비스</tspan>
+  </text>
+</svg>
