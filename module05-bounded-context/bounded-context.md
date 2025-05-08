@@ -41,7 +41,7 @@ Bounded Context는 마이크로서비스 아키텍처에서 서비스 간 경계
   - **reserve-check-service**: 예약 확인 서비스
 
 - ![bounded-context](./images/bounded-context.webp)
-
+- ![bounded-context](./images/bounded_context_diagram.svg)
 - 각 서비스는 자체 데이터베이스 스키마와 API를 가지고 있으며, 독립적으로 개발, 배포, 확장이 가능한 형태로 구성되어 있음. 이는 DDD(Domain-Driven Design)의 Bounded Context 원칙을 마이크로서비스 아키텍처로 구현한 좋은 예시
 
 - 또한 이 프로젝트에서는 다음과 같은 인프라 서비스들이 이러한 Bounded Context들을 지원함:
