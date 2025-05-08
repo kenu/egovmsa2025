@@ -49,3 +49,9 @@ Bounded Context는 마이크로서비스 아키텍처에서 서비스 간 경계
   - **config**: 중앙화된 설정 관리
   - **discovery**: 서비스 디스커버리 (서비스 등록 및 검색)
 - 각 Bounded Context는 자체 도메인 로직과 데이터 모델을 가지고 있으며, 필요에 따라 다른 Bounded Context와 통신하여 전체 시스템을 구성
+
+## 참고
+- Pattern: Decompose by subdomain
+  - https://microservices.io/patterns/decomposition/decompose-by-subdomain.html
+- [Domain-Driven-Design] 바운디드 컨텍스트 (Bounded-Context) ✍️
+  - https://velog.io/@hope0206/Domain-Driven-Design-바운디드-컨텍스트-Bounded-Context
