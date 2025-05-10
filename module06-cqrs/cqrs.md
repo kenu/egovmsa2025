@@ -32,12 +32,14 @@ CQRS는 "Command Query Responsibility Segregation"의 약자로, **명령(Comman
 ### 데이터베이스는 하나를 사용하고 모델 레이어만 분리한 CQRS 구조
 - Command 모델과 Query 모델을 분리함으로써, 각 모델의 역할에 집중할 수 있기 때문에 코드의 명확성과 유지보수성이 향상되지만 데이터베이스를 하나만 사용하기 때문에 성능 문제는 개선하지 못함
 <br>
+
 ![alt text](./images/cqrs_2.webp)
 
 ### 데이터베이스와 모델 레이어를 분리한 CQRS 구조
 - 각 모델에 적합한 데이터베이스를 사용하여 성능을 향상시킬 수 있음
 - Broker를 통해서 Command 데이터베이스와 Query 데이터베이스를 동기화해줘야 함
 <br>
+
 ![alt text](./images/cqrs_3.webp)
 
 
