@@ -32,12 +32,14 @@ CQRS는 "Command Query Responsibility Segregation"의 약자로, **명령(Comman
 ### 데이터베이스는 하나를 사용하고 모델 레이어만 분리한 CQRS 구조
 - Command 모델과 Query 모델을 분리함으로써, 각 모델의 역할에 집중할 수 있기 때문에 코드의 명확성과 유지보수성이 향상되지만 데이터베이스를 하나만 사용하기 때문에 성능 문제는 개선하지 못함
 <br>
+
 ![alt text](./images/cqrs_2.webp)
 
 ### 데이터베이스와 모델 레이어를 분리한 CQRS 구조
 - 각 모델에 적합한 데이터베이스를 사용하여 성능을 향상시킬 수 있음
 - Broker를 통해서 Command 데이터베이스와 Query 데이터베이스를 동기화해줘야 함
 <br>
+
 ![alt text](./images/cqrs_3.webp)
 
 
@@ -50,6 +52,14 @@ CQRS는 "Command Query Responsibility Segregation"의 약자로, **명령(Comman
 - **도메인이나 비즈니스 로직이 단순한 시스템**: 비즈니스 로직이 단순한 시스템에서는 CQRS를 도입하게 되면 불필요한 오버헤드를 발생시킬 수 있음
 - **개발팀의 경험과 역량이 부족할 경우**: CQRS를 도입하게 되면 시스템 설계 방식이 복잡해지기 때문에, 개발자의 충분한 경험과 역량이 필요함
 
+
+
+## CQRS 사용 사례
+- **배달의민족(B마트):**  
+  전시 도메인(카탈로그, 상품 등)에 CQRS를 적용해 명령/조회 모델을 분리, 이벤트 기반 동기화로 성능과 유지보수성 개선([참고 링크](https://www.youtube.com/watch?v=fg5xbs59Lro&t=6s))
+- **강남언니:**  
+  의료 SaaS, 병원 운영 등 다양한 도메인에서 CQRS와 이벤트 소싱을 결합해 명령/조회 분리, 이벤트 기반 데이터 동기화, 시스템 확장성과 복잡한 비즈니스 요구 대응력을 확보([참고 링크](https://blog.gangnamunni.com/post/saas-event-sourcing/))
+  
 
 ## 결론
 
