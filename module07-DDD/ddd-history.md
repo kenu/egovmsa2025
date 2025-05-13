@@ -7,6 +7,7 @@
 ### Eric Evans와 Blue Book (2003)
 
 - **2003년**: Eric Evans가 "Domain-Driven Design: Tackling Complexity in the Heart of Software" 출간
+- [PDF](https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf)
 - 이 책은 흔히 "Blue Book"으로 불리며 DDD의 바이블로 여겨짐
 - Evans는 수년간의 컨설팅 경험을 바탕으로 복잡한 소프트웨어 시스템 개발의 문제를 해결하고자 함
 - 소프트웨어가 비즈니스 도메인을 정확히 모델링해야 한다는 혁신적 아이디어 제시
@@ -82,17 +83,28 @@
 - DDD의 창시자
 - 계속해서 DDD 커뮤니티 리더 역할 수행
 
+<img src="./images/eric-evans.png" alt="Eric Evans">
+
 ### Vaughn Vernon
 - "Implementing Domain-Driven Design"의 저자
 - Reactive 프로그래밍과 DDD 결합 선도
 - 액터 모델과 DDD 통합 연구
+
+<img src="./images/vaughn-vernon.png" alt="Vaughn Vernon">
 
 ### Martin Fowler
 - Blue Book에 서문 작성
 - Enterprise Architecture Patterns와 DDD 연결
 - DDD 개념을 더 넓은 커뮤니티에 소개
 
+<img src="./images/martin-fowler.png" alt="Martin Fowler">
+
 ### Greg Young
 - CQRS 패턴 제안
 - Event Sourcing 개념 정립
 - DDD의 Event 관련 패턴 발전에 기여
+
+<img src="./images/greg-young.png" alt="Greg Young">
+
+## 참고
+- image from: [google](https://www.google.com/search?newwindow=1&sca_esv=38312a7202a7ceff&sxsrf=AHTn8zpUhITWAZmTQDoARTSynSH59dx_Mw:1747099680920&q=Eric+Evans&stick=H4sIAAAAAAAAAONgFuLRT9c3NEouNC3MLUtTQuFpCQZnpqSWJ1YW-6VWlASXpBYU_2IUC0jNL8hJVUjMKc5XKE5NLErOUEjLL1rEyuValJms4FqWmFe8g5XxFpskQ5hf-OclNWvcOTVCUlIdIza5cRf7_FTiPAoA5232oHYAAAA&sa=X&ved=2ahUKEwjVjPm-pZ-NAxXA3zQHHTt_A-AQzO0BKAR6BAgbEBM&biw=1920&bih=888&dpr=1)
