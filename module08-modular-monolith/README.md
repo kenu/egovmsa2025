@@ -59,3 +59,4 @@
 - [Microservices Killer: Modular Monolithic Architecture](https://medium.com/design-microservices-architecture-with-patterns/microservices-killer-modular-monolithic-architecture-ac83814f6862)
 - [Modular monoliths by Simon Brown - YouTube](https://www.youtube.com/watch?v=SV5RVzKZueA)
 - [Refactoring to a System of Systems](https://github.com/odrotbohm/sos)
+- [Building modular monoliths using spring](https://github.com/arawn/building-modular-monoliths-using-spring/tree/master?tab=readme-ov-file)
