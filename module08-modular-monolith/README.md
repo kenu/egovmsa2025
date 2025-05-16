@@ -1,6 +1,6 @@
 # Modular Monolith
 - [전통적 모놀리스](./monolith.md)
-- [마이크로 서비스](./microservices.md)
+- [마이크로 서비스](./microservice.md)
 - [모듈러 모놀리스](./modular-monolith.md)
 
 ![모듈러 모놀리스](./images/monolith-vs-microservices.png)
