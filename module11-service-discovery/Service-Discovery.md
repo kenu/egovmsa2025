@@ -97,6 +97,7 @@ Client대신 **게이트웨이나 프록시**가 서비스 위치를 찾아서 �
 
 
 ## 참고
+- [egov msa service discovery](./egov-msa-service-discovery.md)
 - Service Discovery in a Microservices Architecture
   - https://www.f5.com/company/blog/nginx/service-discovery-in-a-microservices-architecture 
 - MSA School 서비스 디스커버리 패턴
