@@ -196,7 +196,7 @@ volumeMounts:
     mountPath: /etc/config # 파일 형태로 붙일 경로
 ```
 
-⇒ 컨테이너 내부에 아래와 같은 파일 생성
+⇒ 컨테이너 내부에 아래와 같은 파일 생성  
 ** key : 파일 이름 / value : 파일 내용
 
 ```bash
