@@ -9,6 +9,8 @@
 - [마이크로서비스의 안티패턴](./module03-msa-overview/anti.md)
 - [바운디드 컨텍스트](./module05-bounded-context/bounded-context.md)
 - [CQRS](./module06-cqrs/cqrs.md)
+- [서비스 디스커버리](./module11-service-discovery/README.md)
+- [ConfigMap](./module16-configMap/README.md)
 
 ## 참고
 - https://git-scm.com/book/ko/v2/Git-브랜치-브랜치란-무엇인가
