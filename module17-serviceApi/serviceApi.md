@@ -1,4 +1,4 @@
-# Service Api
+# Service API
 
 ## 1. API 란?
 
